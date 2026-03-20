@@ -7,12 +7,28 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
+
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo">Faryal Bahawi</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
     <div class="container hero-content">
       <div class="hero-text">
+        <p class="intro">Hello, I'm</p>
         <h1>Faryal Bahawi</h1>
         <h2>Data Science Graduate Student | Data Engineering & Machine Learning</h2>
-        <p>
+        <p class="hero-description">
           I design scalable data pipelines and build machine learning solutions
           that transform raw data into actionable insights.
         </p>
@@ -20,31 +36,39 @@
           <a href="#projects" class="btn">View Projects</a>
           <a href="https://www.linkedin.com/in/faryal-bahawi-28027b205/" class="btn btn-outline" target="_blank">LinkedIn</a>
           <a href="https://github.com/Faryal-Bahawi" class="btn btn-outline" target="_blank">GitHub</a>
-          <a href="#contact" class="btn btn-outline">Contact</a>
         </div>
       </div>
+
       <div class="hero-image">
         <img src="images/faryal.jpg" alt="Faryal Bahawi" />
       </div>
     </div>
   </header>
 
-  <section class="section">
+  <section class="section" id="about">
     <div class="container">
-      <h3>About Me</h3>
-      <p>
-        I am a Data Science graduate student at the University of New Haven with
-        hands-on experience in data engineering, machine learning, and cloud-based
-        analytics. My work focuses on building scalable data pipelines, transforming
-        complex datasets into analytics-ready formats, and developing predictive
-        models to support data-driven decision making.
-      </p>
+      <div class="section-heading">
+        <p class="section-label">About</p>
+        <h3>About Me</h3>
+      </div>
+      <div class="about-card">
+        <p>
+          I am a Data Science graduate student at the University of New Haven with
+          hands-on experience in data engineering, machine learning, and cloud-based analytics.
+          My work focuses on building scalable data pipelines, transforming complex datasets
+          into analytics-ready formats, and developing predictive models to support data-driven
+          decision making.
+        </p>
+      </div>
     </div>
   </section>
 
-  <section class="section alt">
+  <section class="section alt" id="skills">
     <div class="container">
-      <h3>Skills</h3>
+      <div class="section-heading">
+        <p class="section-label">Skills</p>
+        <h3>What I Work With</h3>
+      </div>
       <div class="cards">
         <div class="card">
           <h4>Programming</h4>
@@ -68,66 +92,75 @@
 
   <section class="section" id="projects">
     <div class="container">
-      <h3>Projects</h3>
+      <div class="section-heading">
+        <p class="section-label">Projects</p>
+        <h3>Featured Work</h3>
+      </div>
       <div class="cards">
-        <div class="card">
+        <div class="card project-card">
           <h4>RidePulse – AWS Ride Analytics Platform</h4>
           <p>
             Designed and implemented end-to-end data pipelines to ingest, clean,
             and transform large ride-sharing datasets using AWS services including
             S3, EC2, and Athena.
           </p>
+          <span class="tag">AWS • S3 • EC2 • Athena</span>
         </div>
-        <div class="card">
+
+        <div class="card project-card">
           <h4>Diabetes Prediction Using Machine Learning</h4>
           <p>
             Built supervised machine learning models to predict diabetes risk using
             structured healthcare data, applying preprocessing, feature scaling,
             and SMOTE to address class imbalance.
           </p>
+          <span class="tag">Python • scikit-learn • SMOTE</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
+  <section class="section alt" id="experience">
     <div class="container">
-      <h3>Experience</h3>
-      <div class="card">
-        <h4>Admissions Data & Operations Assistant – University of New Haven</h4>
-        <p>
-          Maintained structured datasets within CRM systems and ensured data integrity
-          through validation and quality checks to support reporting workflows.
-        </p>
+      <div class="section-heading">
+        <p class="section-label">Experience</p>
+        <h3>Professional Experience</h3>
       </div>
-      <div class="card">
-        <h4>Project Assistant – International Organization for Migration (IOM)</h4>
-        <p>
-          Managed participant data and program records, improving organization and
-          accessibility of information for data-informed decision making.
-        </p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Admissions Data & Operations Assistant</h4>
+          <p class="subtext">University of New Haven</p>
+          <p>
+            Maintained structured datasets within CRM systems and ensured data integrity
+            through validation and quality checks to support reporting workflows.
+          </p>
+        </div>
+
+        <div class="timeline-item">
+          <h4>Project Assistant</h4>
+          <p class="subtext">International Organization for Migration (IOM)</p>
+          <p>
+            Managed participant data and program records, improving organization and
+            accessibility of information for data-informed decision making.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="contact">
     <div class="container">
-      <h3>Education</h3>
-      <div class="card">
-        <p><strong>University of New Haven</strong> — M.S. in Data Science</p>
-        <p><strong>American University of Afghanistan</strong> — B.B.A. in Finance, Minor in Data Science</p>
-        <p><strong>Kabul University of Medical Science</strong> — Bachelor of General Medicine</p>
+      <div class="section-heading">
+        <p class="section-label">Contact</p>
+        <h3>Let’s Connect</h3>
+      </div>
+      <div class="contact-card">
+        <p><strong>Email:</strong> faryalbahawi963@gmail.com</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/faryal-bahawi-28027b205/" target="_blank">linkedin.com/in/faryal-bahawi-28027b205</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Faryal-Bahawi" target="_blank">github.com/Faryal-Bahawi</a></p>
       </div>
     </div>
   </section>
 
-  <section class="section alt" id="contact">
-    <div class="container">
-      <h3>Contact</h3>
-      <p>Email: faryalbahawi963@gmail.com</p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/faryal-bahawi-28027b205/" target="_blank">linkedin.com/in/faryal-bahawi-28027b205</a></p>
-      <p>GitHub: <a href="https://github.com/Faryal-Bahawi" target="_blank">github.com/Faryal-Bahawi</a></p>
-    </div>
-  </section>
 </body>
 </html>
